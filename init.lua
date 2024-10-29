@@ -4,6 +4,9 @@ vim.g.mapleader = " "
 -- Переключение на предыдущий буфер
 vim.keymap.set('n', '<leader>p', ':bprevious<CR>', { noremap = true, silent = true })
 
+-- clipboard
+vim.opt.clipboard = "unnamedplus"
+
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
